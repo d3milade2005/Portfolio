@@ -1,0 +1,617 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #0F141C;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+ol,ul {
+    padding-left: 0rem !important;
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+ul li {
+    list-style: none;
+}
+::-webkit-scrollbar {
+    width: 4px;
+}
+::-webkit-scrollbar-corner {
+    display: none;
+}
+::-webkit-scrollbar-thumb {
+    background: lightblue;
+    background-clip: content-box;
+}
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+.tab-bar::-webkit-scrollbar {
+    display: none;
+}
+.site-loader {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #0F141C;
+    z-index: 1000;
+    overflow: hidden;
+    width: 100%
+}
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+    z-index: 2;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+.navbar{
+    font-family: 'Alex Brush';
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.navbar-brand{
+    color: white;
+    font-size: 30px;
+}
+.offcanvas-end{
+    background: url(../images/bg1.jpg) rgba(0, 0, 0, 0.8);
+    background-size: cover;
+    background-blend-mode: multiply;;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+.navbar-toggler{
+    background-color: white;
+    border: none;
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: lightblue
+}
+.btn-close{
+    background-color: white
+}
+.scroll-down{
+    display: block;
+}
+.section-main {
+    background: url(../images/bg1.jpg) rgba(0, 0, 0, 0.74);
+    background-size: cover;
+    background-blend-mode: multiply;;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px 0px 0px 0px;
+    height: 100%;
+}
+.media-main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+}
+.media-main div a img{
+    position: relative;
+    transition: .5s;
+}
+.media-main div a:hover img{
+    transform: rotateY(360deg);
+}
+.container2 {
+    margin: auto;
+    width: 60%;
+}
+.main-text {
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+}
+.main-text span {
+    transform-origin: 70% 70%;
+    display: inline-block;
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+    40% {
+        transform: rotate(-4.0deg)
+    }
+
+    50% {
+        transform: rotate(10.0deg)
+    }
+
+    60% {
+        transform: rotate(0.0deg)
+    }
+
+    100% {
+        transform: rotate(0.0deg)
+    }
+}
+.container2 h1 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 700;
+    color: white;
+}
+.container2 h1 mark {
+    padding: 0;
+    background: linear-gradient(90deg, lightblue, aqua);
+    background-clip: text;
+    color: transparent
+}
+
+.section-main-right-contain {
+    border-left: 2px solid #ffffff38;
+    width:25%
+}
+.section-main-right-contain-sub {
+    padding: 30px;
+    border-bottom: 1px solid grey;
+}
+.total-project {
+    color: white;
+    text-align: center;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    padding-bottom: 15px;
+}
+.project-complete{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+}
+.summary-robot {
+    text-align: center;
+    padding: 50px;
+    border-bottom: 1px solid grey;
+}
+.robot {
+    animation: rotation infinite 9s linear;
+}
+@keyframes rotation {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+#more-button{
+    height: 50px;
+    width: 200px;
+    background-color: transparent;
+    font-size: 15px;
+    transition: transform 0.5s;
+}
+#more-button:hover {
+    transform: scale(1.05);
+}
+#more-button a:hover {
+    color: white
+}
+.software{
+    color: grey;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    padding-top: 30px;
+}
+.software span {
+    color: white;
+}
+.mouse{
+    height: 100px;
+    width: 60px;
+    border: 2px solid white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scroll-down {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    max-width: 80px;
+    text-align: center;
+}
+.mouse-arrow-down {
+    animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+@keyframes bounce {
+    50% {
+        transform: translateY(10px);
+    }
+}
+.mouse-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 70px 0;
+}
+
+.secondsection{
+    background: black;
+    padding-bottom: 50px;
+}
+.info-view{
+    justify-content: space-between;
+}
+.info{
+    background: linear-gradient(90deg, lightblue, aqua);
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: line-through;
+    line-height: 150px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.personal-info{
+    text-align: left;
+    line-height: 30px;
+    color: white
+}
+#social-button{
+    height: 50px;
+    width: 200px;
+    background-color: transparent;
+    font-size: 15px;
+    transition: transform 0.5s;
+}
+#social-button:hover {
+    transform: scale(1.05);
+}
+#social-button a:hover {
+    color: white
+}
+.accordion-header button{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 80px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+.accordion-body h3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+.accordion-body p{
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white
+}
+.accordion-item{
+    background-color: black;
+}
+.sliding{
+    background: url(../images/bg1.jpg) rgba(0, 0, 0, 0.85);
+    background-size: cover;
+    background-blend-mode: multiply;;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+.ticker__item:before {
+    content: '_';
+    color: transparent;
+}
+.logos {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+}
+.logos:before,.logos:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 30%;
+    height: 100%;
+    z-index: 2;
+}
+.logos:before {
+    left: 0;
+    background: linear-gradient(to right, hsl(215.75deg 20.16% 7.73%) 0%, rgba(0, 0, 0, 0) 99%, rgba(0, 0, 0, 0) 100%);
+}
+.logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 1%, rgb(16 21 27) 98%);
+}
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+.logos-slide {
+    animation: 60s slide infinite linear;
+}
+.logos-slide .ticker__item, .logos-slide .ticker__item a {
+    display: inline-block;
+    font-size: 100px;
+    line-height: 120px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    font-weight: 700;
+    font-family: "Syne", Sans-serif;
+    will-change: transform;
+    color: transparent;
+}
+@keyframes slide {
+    from {
+        transform: translateX(0);
+
+    }
+    to {
+        transform: translateX(-100%);
+
+    }
+}
+.thirdsection{
+    background-color: #0F141C;
+    padding: 50px 0px 50px 0
+}
+.skill, .expertise, .project-title{
+    color: white;
+    font-size: 30px;
+    font-family: 'Aclonica';
+}
+.skill-box{
+    width: 250px;
+    height: 390px;
+    border-radius: 150px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.5s;
+}
+.skill-box:hover {
+    transform:scale(1.1)
+}
+.skill-box img {
+    margin-bottom: 60px;
+    filter: grayscale(1);
+}
+.skill-box:hover img {
+    filter: grayscale(0);
+}
+.skill-box h3 {
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 80px;
+    padding-bottom: 10px;
+}
+.count2::after {
+    content: '%';
+}
+.skill-box:hover.skill-box h3 {
+    background:linear-gradient(90deg, lightblue,aqua);
+    background-clip: text;
+    color: transparent;
+}
+.skill-box p {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+}
+.skill-box:hover.skill-box p {
+    color: white;
+}
+.fourthsection{
+    background-color: black;
+}
+.project-container-main{
+    padding-top: 50px;
+    gap: 75px
+}
+.project-image{
+    transition: transform 0.85s;
+}
+.project-image:hover{
+    transform: scale(1.05);
+}
+.name_of_project, .project-info, .page-link{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+.page-link:hover{
+    color: white;
+    text-decoration: underline;
+}
+.program-list{
+    color: grey;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+.project-list{
+    border-bottom:1px solid grey;
+    padding-bottom: 50px;
+    gap:200px !important;
+}
+.section-contact{
+    background: url(../images/bg1.jpg) rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    background-blend-mode: multiply;;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+.media{
+    color: white
+}
+#footer-container{
+    gap:100px
+}
+@media only screen and (max-width:768px){
+    .section-main-right-contain{
+        display: none !important
+    }
+    .media-main{
+        padding-left:0px !important;
+    }
+    .project-list{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        gap: 10px !important;
+        padding-bottom: 15px !important;
+    }
+    .social-icon-list{
+        flex-direction: column;
+        gap: 75px
+    }
+}
+@media only screen and (max-width:1000px){
+    .container2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        height: 100vh;
+        width: auto !important;
+    }
+    .main-text{
+        font-size: 15px !important;
+        font-weight: bold !important;
+    }
+    .container2 h1{
+        font-size: 30px !important;
+    }
+    .button-contact{
+        gap: 20px !important;
+    }
+    #social-button a{
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .skills{
+        display: block;
+    }
+    .skill-box{
+        width: 200px !important;
+        height: 350px !important;
+    }
+    .counter h3{
+        font-size: 50px !important;
+    }
+    .project-list{
+        gap: 100px
+    }
+    .project-title{
+        font-size: 20px;
+    }
+    .program-list{
+        font-size: 10px;
+    }
+    .container-page{
+        padding-top: 20px;
+    }
+    .more-button{
+        padding-top: 50px;
+    }
+    .social-icon-list{
+        display: flex;
+        gap: 80px;
+    }
+    .socials-icon{
+        padding: 15px !important;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .section-main-right-contain{
+        width: 30% !important
+    }
+}
+@media only screen and (max-width: 1400px){
+    .section-main-right-contain-sub {
+        padding: 10px !important;
+    }
+    .summary-robot{
+        padding:30px !important;
+    }
+    .mouse-scroll-box{
+        padding-left: 15px;
+    }
+    .info-view{
+        display: block;
+    }
+    .personal-info{
+        font-size: 20px;
+        line-height: 50px !important;
+    }
+    .about-contact-download, .accordion{
+        width: 100%
+    }
+    .button-contact{
+        gap: 15px !important
+    }
+    .button-contact #social-button{
+        width: 250px !important;
+    }
+    .more-button{
+        padding-top: 50px;
+    }
+}
